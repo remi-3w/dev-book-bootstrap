@@ -6636,7 +6636,9 @@ a.close.disabled {
 
 .contenu{
   background-color: #62BCCF;
-  height: 500px;
+  min-height: 500px;
+
+  height: auto;
  
    
 }
