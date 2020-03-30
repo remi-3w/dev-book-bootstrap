@@ -23,12 +23,45 @@
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item active">
               <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
-  Se connecter
-</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">
+              Se connecter
+              </button>
 
-<!-- Modal -->
+<!-- Modal connexion -->
 <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="staticBackdropLabel">Inscrivez-vous  </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body row ">
+          <div class="input-group flex-wrap">
+            <div class="input-group-prepend col-12 ">
+              <span class="input-group-text col-4 mr-1 mb-1" id="addon-wrapping">Pseudo</span>
+                <input type="text" class="form-control"  aria-label="Pseudo" aria-describedby="addon-wrapping">
+            </div>
+            <div class="input-group-prepend col-12">
+              <span class="input-group-text col-4 mr-1 mb-1" id="addon-wrapping">Mot de passe </span>
+                <input type="text" class="form-control"  aria-label="password" aria-describedby="addon-wrapping">
+            </div>
+          </div>
+        </div>
+
+        <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submit">Se connecter</button>
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#staticBackdrop2">"Je n'ai pas de compte ! M'inscrire !</button>
+
+        
+        <!-- Formulaire de connexion -->
+        
+        
+        
+        <!-- Modal -->
+<div class="modal fade" id="staticBackdrop2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -39,27 +72,36 @@
       </div>
       <div class="modal-body">
 
-        <!-- Formulaire -->
+               
+        <!-- Formulaire  -->
 
         <form>
           <div class="row">
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">* Prénom</label>
+            <div class="form-group col-md-12">
+              <label for="inputPseudo">*Pseudo</label>
               <input type="text" class="form-control" placeholder="Prénom"required>
             </div>
             <div class="form-group col-md-6">
-              <label for="inputEmail4">Nom</label>
+              <label for="inputFirstname">*Prénom</label>
+              <input type="text" class="form-control" placeholder="Prénom"required>
+            </div>
+            <div class="form-group col-md-6">
+              <label for="inputLastname">*Nom</label>
               <input type="text" class="form-control" placeholder="Nom">
             </div>
           </div>
           <div class="form-row">
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-12">
               <label for="inputEmail4">* Email</label>
-              <input type="email" class="form-control" id="inputEmail4"required>
+              <input type="email" class="form-control" id="inputEmail"required>
             </div>
-            <div class="form-group col-md-6">
-              <label for="inputPassword4" > *Mot de passe</label>
+            <div class="form-group col-md-12">
+              <label for="inputPassword" > *Mot de passe</label>
               <input type="password" class="form-control" id="inputPassword4"required>
+            </div>
+            <div class="form-group col-md-12">
+              <label for="inputPassword2" > *Confirmer le Mot de passe</label>
+              <input type="password2" class="form-control" id="inputPassword2"required>
             </div>
           </div>
           <div class="form-group">
@@ -389,7 +431,8 @@
        
             </div>
             <div class="col">
-             <h1 class="deux text-center container-fluid">Dev-Book </br><small>Le reseau portfolio des developpeurs</small></h1>
+             <p class=" test text-responsive ">Dev-Book </br><small>Le reseau portfolio des developpeurs</small></p>
+             <p id="test">allo</p>
 
             </div>
            
